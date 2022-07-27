@@ -102,10 +102,6 @@ class FileOperation extends IdModel {
         type: model.type,
       }
     );
-
-    if (count >= 12) {
-      throw RateLimitExceededError();
-    }
   }
 
   // associations
